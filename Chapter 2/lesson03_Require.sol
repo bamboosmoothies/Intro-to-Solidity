@@ -2,14 +2,12 @@ pragma solidity >=0.5.0 <0.6.0;
 
 contract Example {
     /* 
-        In solidity, there are certain global variables that are
-        avaliable to all functions. 
-        msg.sender - refers to the address of the person/smart contract who called the 
-        current function.
-
-        msg.sender will be the person who's currently connecting with the contract.
-        contracts that creating the call with other contracts would be
-        the msg.sender. 
+        Require - makes a function throw an error and stop executing
+        if some conditions are not true.
+        Thus require is quite useful for verifying certain conditions
+        that must be true before running a function.
+        Can also be used to only call in a function once per address in case scenarios.
+        
      */
 
     function sayHiToVitalik(string memory _name)
